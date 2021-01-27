@@ -26,9 +26,35 @@ const $pokemon__type = document.querySelector('.pokemon__type')
 //     placeImages(API);
 // })
 
+$input.addEventListener('keypress', async (e)=>{
+    if(e.keyCode === 13){//si la tecla presionada es enter activa el trigger
+        try {
+            let pokemonName= $input.value.toLowerCase();
+            let pokemon = await fetchPokemon(`${API}${pokemonName}`);
+            renderImage(pokemon);
+            renderName(pokemon);
+            renderId(pokemon);
+            renderType(pokemon);
+            
+        } catch (error) {
+            $pokemon__image.setAttribute('src','src/img/ash.jpg');
+            $pokemon__name.innerHTML= 'Pokemon no encontrado';
+            $pokemon__number.innerHTML = "?";
+            while ($pokemon__type.firstElementChild) {//si tiene hijos eliminalos hasta que no quede ninguno
+                $pokemon__type.removeChild($pokemon__type.firstElementChild);
+            }
+            let type= document.createElement('h5');
+            type.classList.add('notFounded');
+            type.innerHTML ="Tipo no encontrado";
+            $pokemon__type.appendChild(type);
+            
+        }
+    }
+})
+
 $generatorButton.addEventListener(('click'), async()=>{
     try {
-        let pokemonName= $input.value;
+        let pokemonName= $input.value.toLowerCase();
         let pokemon = await fetchPokemon(`${API}${pokemonName}`);
         renderImage(pokemon);
         renderName(pokemon);
@@ -44,7 +70,6 @@ $generatorButton.addEventListener(('click'), async()=>{
         }
         let type= document.createElement('h5');
         type.classList.add('notFounded');
-        debugger
         type.innerHTML ="Tipo no encontrado";
         $pokemon__type.appendChild(type);
         
