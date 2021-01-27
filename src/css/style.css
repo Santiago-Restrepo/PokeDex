@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap');
+
+body{
+    margin: 0;
+}
+
+h5,h3{
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../../images/background.png);
+    background-position: bottom;
+}
+
+.input{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 12em;
+    height: 1em;
+    padding: .7em;
+    border-radius: 1em;
+    background-color: #e0e0e0af;
+    color: #666666;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    font-family: 'Open sans';
+}
+
+.input::placeholder{
+    font-family: 'Open sans';
+    color: #666666;
+}
+
+
+
+.generatorButton{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.generatorButton >img{
+    width: 10em;
+    margin-bottom: 1em;
+    cursor: pointer;
+
+}
+
+.pokedex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Open sans';
+}
+
+.pokemon{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    max-width: 20em;
+    height: fit-content;
+    padding: 1em 0;
+    background-color: #00000071;
+    border: 2px solid #e0e0e0;
+    border-radius: 1em;
+}
+
+
+/* .pokemon:hover{
+    transform: scale(1.1);
+} */
+
+
+.pokemon__number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .2em 1em;
+    width: fit-content;
+    color: rgb(26, 26, 26);
+    background-color: #e0e0e0;
+    border-top-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    font-weight: 600;
+    
+}
+
+.pokemon__image{
+    align-self: center;
+    width: 15em;
+}
+.pokemon__name{
+    margin-bottom: 1em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.pokemon__type{
+    display: flex;
+    align-self: center;
+    justify-content:space-evenly;
+    flex-flow: wrap;
+    text-align: center;
+    width: 80%;
+    /* height: auto; */
+    font-size: 1.2em;
+}
+
+.pokemon__type > h5{
+    width: fit-content;
+    padding: .2em .5em;
+    color: #ffffff;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.notFounded{
+    background-color: #0e0606;
+
+}
+
+.normal{
+    background-color: #646464;
+}
+
+.fighting{
+    background-color: #994025;
+}
+
+.flying{
+    background-color: #4a677d;
+}
+
+.poison{
+    background-color: #5e2d88;
+}
+
+.ground{
+    background-color: #a9702c;
+}
+
+.rock{
+    background-color: #48180b;
+}
+
+.bug{
+    background-color: #1c4b27;
+}
+
+.ghost{
+    background-color: #33336b;
+}
+
+.steel{
+    background-color: #5f756d;
+}
+
+.grass{
+    background-color: #147b3d;
+}
+
+.psychic{
+    background-color: #a42a6d;
+}
+
+.ice{
+    background-color: #86d2f5;
+}
+
+.dragon{
+    background-color: #5e4da8;
+}
+
+.dark{
+    background-color: #040706;
+}
+
+.fairy{
+    background-color: #971944;
+}
+
+.unknown{
+    background-color: #516370;
+}
+
+.shadow{
+    background-color: #1c2932;
+}
+
+.electric{
+    background-color: #e3e32b;
+}
+.fire{
+    background-color: #ab1f23;
+}
+.water{
+    background-color: #1552e2;
+}
+
+@media only screen and (min-width: 500px){
+    .pokemon{
+        height: 25em;
+    }
+}
+@media only screen and (min-width: 1024px){
+
+    .input{
+        width: 20em;
+        height: 1.2em;
+    }
+
+
+    .generatorButton{
+        margin-bottom: 2em;
+    }
+
+    .generatorButton >img{
+        width: 15em;
+    
+    }
+    .pokemon__number{
+        padding: .5em 1.5em;
+    }
+
+    .pokemon__image{
+        width: 18em;
+    }
+
+    .pokemon__name{
+        font-size: 1.5em;
+    }
+    .pokemon__type{
+        font-size: 1.3em;
+    }
+}
+
+
+
+
+
+/* .generatorButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    padding: 1em;
+    border-radius: 2em;
+    background-color:transparent;
+    border: none;
+    outline: none;
+}
+.generatorButton>img:hover{
+    width: 400px;
+}
+.generatorButton>img{
+    width: 350px;
+    cursor: pointer;
+    transition: width .5s;
+}
+
+.pokePlace{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+} */
