@@ -1,20 +1,20 @@
 # PokeDex
 
-Práctica sobre asincronísmo realizando peticiones a la API : PokeAPI 
+Practice about asynchronism on javaScript by making requests to the API : **PokeAPI**
 
-## Construido con 🛠️
+## Built with 🛠️
 
-* <img src="https://shields.io/badge/html5-brown?logo=html5&logoColor=white&style=for-the-badge"> - Estructura de la página
-* <img src="https://shields.io/badge/css3-blue?logo=css3&style=for-the-badge"> - Estilos de la app
-* <img src="https://shields.io/badge/javascript-black?logo=javascript&style=for-the-badge"> - Lenguaje de programación encargado de la parte dinámica de la página
+* <img src="https://shields.io/badge/html5-brown?logo=html5&logoColor=white&style=for-the-badge"> - Page structure
+* <img src="https://shields.io/badge/css3-blue?logo=css3&style=for-the-badge"> - App styles
+* <img src="https://shields.io/badge/javascript-black?logo=javascript&style=for-the-badge"> - Programming language in charge of the dynamic part of the page.
 
-## Versión 📌
+## Version 📌
 
-##### Versión 1.0.0
+##### Version 1.0.0
 
-## Colaboradores ✒️
+## Contributors ✒️
 
-* [Santiago Restrepo](https://github.com/Santiago-Restrepo) - *Desarrollo | diseño | despliegue | Documentación*
+* [Santiago Restrepo](https://github.com/Santiago-Restrepo) - *Development | Design | desploy | Documentation*
 
 ---
-⌨️ con ❤️ por [Santiago Restrepo](https://github.com/santiago-restrepo) 😊
+Made with 💜 by [Santiago Restrepo](https://github.com/santiago-restrepo) 😊
