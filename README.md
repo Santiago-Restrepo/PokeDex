@@ -2,6 +2,11 @@
 
 Practice about asynchronism on javaScript by making requests to the API : **PokeAPI**
 
+### Installation 🔧
+
+#### No instalation requiered
+Just `git clone`
+
 ## Built with 🛠️
 
 * <img src="https://shields.io/badge/html5-brown?logo=html5&logoColor=white&style=for-the-badge"> - Page structure
