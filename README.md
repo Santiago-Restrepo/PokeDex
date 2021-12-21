@@ -17,4 +17,4 @@ Practice about asynchronism on javaScript by making requests to the API : **Poke
 * [Santiago Restrepo](https://github.com/Santiago-Restrepo) - *Development | Design | desploy | Documentation*
 
 ---
-Made with 💜 by [Santiago Restrepo](https://github.com/santiago-restrepo) 😊
+📖 made with 💜 by [Santiago Restrepo](https://github.com/santiago-restrepo) 😊
